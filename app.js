@@ -17,7 +17,7 @@ class ApiService {
   }
 
   static async login(userid, password) {
-    // POST /login - Returns JWT token on successful authentication
+
     const response = await fetch(`${API_BASE_URL}/login`, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
@@ -856,4 +856,5 @@ const AppContent = ({ currentPage, setCurrentPage, selectedVRM, setSelectedVRM }
   };
 
   return renderPage();
+
 }
